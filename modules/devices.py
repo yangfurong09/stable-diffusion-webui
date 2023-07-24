@@ -47,10 +47,10 @@ def get_optimal_device():
 
 
 def get_device_for(task):
-    from modules import shared
+    # from modules import shared
 
-    if task in shared.cmd_opts.use_cpu:
-        return cpu
+    # if task in shared.cmd_opts.use_cpu:
+    #     return cpu
 
     return get_optimal_device()
 
